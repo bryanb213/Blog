@@ -5,7 +5,6 @@
 /Users/bryanblancas/Projects/Blog/Blog/bin/Debug/netcoreapp2.1/Blog.pdb
 /Users/bryanblancas/Projects/Blog/Blog/bin/Debug/netcoreapp2.1/Blog.Views.dll
 /Users/bryanblancas/Projects/Blog/Blog/bin/Debug/netcoreapp2.1/Blog.Views.pdb
-/Users/bryanblancas/Projects/Blog/Blog/obj/Debug/netcoreapp2.1/Blog.csprojAssemblyReference.cache
 /Users/bryanblancas/Projects/Blog/Blog/obj/Debug/netcoreapp2.1/Blog.csproj.CoreCompileInputs.cache
 /Users/bryanblancas/Projects/Blog/Blog/obj/Debug/netcoreapp2.1/Blog.RazorAssemblyInfo.cache
 /Users/bryanblancas/Projects/Blog/Blog/obj/Debug/netcoreapp2.1/Blog.RazorAssemblyInfo.cs
@@ -30,3 +29,4 @@
 /Users/bryanblancas/Projects/Blog/Blog/obj/Debug/netcoreapp2.1/Blog.dll
 /Users/bryanblancas/Projects/Blog/Blog/obj/Debug/netcoreapp2.1/Blog.pdb
 /Users/bryanblancas/Projects/Blog/Blog/obj/Debug/netcoreapp2.1/Blog.csproj.CopyComplete
+/Users/bryanblancas/Projects/Blog/Blog/obj/Debug/netcoreapp2.1/Blog.csprojAssemblyReference.cache
