@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Blog.Models;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace Blog
 {
     public class Startup
@@ -35,6 +36,11 @@ namespace Blog
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            services.AddDistributedMemoryCache();
+            services.AddSession(options => {
+                options.IdleTimeout = TimeSpan.FromMinutes(5);
+            });
+
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
@@ -55,6 +61,8 @@ namespace Blog
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
+            app.UseSession();
+            
 
             app.UseMvc(routes =>
             {

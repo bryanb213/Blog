@@ -1,0 +1,87 @@
+﻿@model User;
+@using Blog.Models;
+
+<script type="text/javascript">
+    function ValidateClose(){
+    var result = Page_ClientValidate('SubmitValidation');
+        if(result){
+        result = Page_ClientValidate('login');
+        }
+    }
+</script>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+
+            <h3>Login</h3>
+            <form asp-action="Login" asp-controller="Home" method="post">
+                <div class="form-group">
+
+                    <asp:label  id="EmailLabel"
+                                text="Enter Email"
+                                AssociatedControlID="textbox1"
+                                runat="Server"
+                                ValidationGroup="login">
+                     </asp:label>
+
+                    <input asp-for="Email" placeholder="Email" class="form-control" />
+
+                    <asp:TextBox ID="textbox1" runat="Server" ValidationGroup="login"></asp:TextBox>
+
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="Server"
+ ErrorMessage="Incorrect Email" ControlToValidate="textbox1" ValidationGroup="login"></asp:RequiredFieldValidator>
+
+                </div>
+                <div class="form-group">
+
+                    <asp:label id="PasswordLabel"
+                               text="Enter Password"
+                               AssociatedControlID="textbox2"
+                               runat="Server"
+                               ValidationGroup="login">
+                    </asp:label>
+                    <input asp-for="Password" class="form-control" placeholder="Password" />
+                    <asp:TextBox id="textbox2" ValidationGroup="login"></asp:TextBox>
+                    <asp:RequiredFieldValidator id ="RequiredFieldValidator2" runat="Server" ErrorMessage="Incorrect Password" ControlToValidate="textbox2" ValidationGroup="login"></asp:RequiredFieldValidator>
+                </div>
+                <asp:button id="button1" OnClientClick="return ValidateClose();" runat="Server" causesvalidation="true" ValidationGroup="login" class="btn btn-primary">Submit</asp:button>
+                
+            </form>
+
+        </div>
+
+        <div class="col-md-6">
+
+            <h3>Register</h3>
+            <form asp-action="Register" asp-controller="Home" method="post">
+                <div class="form-group">
+                    <span asp-validation-for="Name"></span>
+                    <label asp-for="Name"></label>
+                    <input asp-for="Name" class="form-control" placeholder="Name" />
+                    
+                </div>
+
+
+                <div class="form-group">
+
+                    <label asp-for="Email">Email Address</label>
+                    <input asp-for="Email" class="form-control" placeholder="Email" />
+                    <asp:TextBox id="textbox3"></asp:TextBox>
+                    <asp:RequiredFieldValidator id="RequiredFieldValidator3" ErrorMessage="Incorrect Password" ControlToValidate="textbox3" ValidationGroup="registeration"></asp:RequiredFieldValidator>
+                </div>
+
+                <div class="form-group">
+
+                    <label asp-for="Password">Password</label>
+                    <input asp-for="Password" class="form-control" placeholder="Password" />
+                    <asp:TextBox id="textbox4"></asp:TextBox>
+                    <asp:RequiredFieldValidator id="RequiredFieldValidator4" ErrorMessage="" ControlToValidate="textbox4" ValidationGroup="registeration"></asp:RequiredFieldValidator>
+                </div>
+
+
+                <button type="submit" ValidationGroup="registeration" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -30,3 +30,7 @@
 /Users/bryanblancas/Projects/Blog/Blog/obj/Debug/netcoreapp2.1/Blog.pdb
 /Users/bryanblancas/Projects/Blog/Blog/obj/Debug/netcoreapp2.1/Blog.csproj.CopyComplete
 /Users/bryanblancas/Projects/Blog/Blog/obj/Debug/netcoreapp2.1/Blog.csprojAssemblyReference.cache
+/Users/bryanblancas/Projects/Blog/Blog/obj/Debug/netcoreapp2.1/Razor/Views/Home/Home.g.cshtml.cs
+/Users/bryanblancas/Projects/Blog/Blog/obj/Debug/netcoreapp2.1/Razor/Views/Home/Login.g.cshtml.cs
+/Users/bryanblancas/Projects/Blog/Blog/obj/Debug/netcoreapp2.1/Razor/Views/Home/Register.g.cshtml.cs
+/Users/bryanblancas/Projects/Blog/Blog/obj/Debug/netcoreapp2.1/Razor/Views/Home/Blog.g.cshtml.cs

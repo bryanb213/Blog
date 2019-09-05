@@ -14,7 +14,7 @@ namespace Blog.Models
         public string Email { get; set; }
 
         [Required]
-        [Range(typeof(DateTime), "1/1/1920", "12/31/2001", ErrorMessage = "Must be 18 or older")]
+        
         public string Password { get; set; }
 
        public List<Post> CreatedPosts { get; set; }
